@@ -34,13 +34,43 @@
 // three — a line in the rock that slept longer than mountains and
 // woke up.
 //
+// Revision 2 (24 Nov, ~20:30 WIB) — beat the Botswana line, or leave it.
+// The submitted line was strong (180M-year-old crack waking up), so a new
+// line had to win on the judge's criteria in order, not just tie it.
+// Candidates, all real and verified:
+// D: "One star holds a thousandth of the Sun's iron — a fingerprint of
+//    the very first stars, still burning."
+//    Star HE 1153-0518, announced 23 Nov 2026 (IIA/Subaru): a rare
+//    stellar fossil, ~1/1000th the Sun's iron, rich in carbon — a
+//    fingerprint of the earliest stars. Real, but the number is 40x
+//    weaker than F's, and "still burning" adds nothing.
+// F: "One star holds less than a forty-thousandth of the Sun's iron —
+//    the chemical fingerprint of the very first stars."
+//    Star PicII-503 in Pictor II (Nature Astronomy, Mar 2026, UVA/
+//    Stanford): iron below 1/40,000th of the Sun's, carbon-rich — the
+//    clearest example of a star preserving the first stars' chemical
+//    enrichment. The number is unguessable, the gap spans ten billion
+//    years and the birth of the elements, and "chemical fingerprint"
+//    is the researchers' own phrase.
+// G: "The first photograph of a black hole — a ring of fire around a
+//    shadow 55 million light-years away — just passed its check."
+//    M87* image verified (23 Nov). The ring is vivid, but "passed its
+//    check" is administrative, not wonder; the twist fizzles.
+// Verdict: F beats the Botswana line. Criterion 1 (wonder): a star
+// from the dawn of time, almost iron-free, carrying the first stars'
+// chemistry — wider wonder than a crack waking. Criterion 2 (gap):
+// ten billion years and the origin of the elements vs 180 million
+// years of sleep. Criteria 3 and 4 tie (both concrete, both found);
+// criterion 5 is a near-tie (F ~113 chars vs 96). First difference
+// decides: F wins, margin 2-3.
+//
 // First draft below is candidate A; the revision pass edits it to B.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const line =
-  "A crack in Botswana, 180 million years old, stirred back to life in 2017 — and the ground shook.";
+  "One star holds less than a forty-thousandth of the Sun's iron — the chemical fingerprint of the very first stars.";
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outDir, { recursive: true });
